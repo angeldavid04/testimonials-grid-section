@@ -6,36 +6,27 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>Frontend Mentor | Testimonial Grid Section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 0.6875rem;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 <body>
-  <main>
-    <article>
-      <header>
-        <img src="images/image-daniel.jpg" alt="Daniel Clifford">
-        <div>
-          <p>Daniel Clifford</p>
-          <p>Verified Graduate</p>
+  <main class="cards-grid">
+    <article class="card">
+      <header class="card__header">
+        <img src="images/image-daniel.jpg" alt="Daniel Clifford" class="card__user-image">
+        <div class="card__user-container">
+          <p class="card__user-name">Daniel Clifford</p>
+          <p class="card__user-education">Verified Graduate</p>
         </div>
       </header>
-      <h2>
+      <h2 class="card__titular">
         I received a job offer mid-course, and the subjects I learned were current, if not more so,
         in the company I joined. I honestly feel I got every penny’s worth.
       </h2>
-      <p>
+      <p class="card__description">
         “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
         transition and have heard some people who had an amazing experience here. I signed up
         for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
@@ -44,50 +35,50 @@
       </p>
     </article>
 
-    <article>
-      <header>
-        <img src="images/image-jonathan.jpg" alt="Jonathan Walters">
-        <div>
-          <p>Jonathan Walters</p>
-          <p>Verified Graduate</p>
+    <article class="card">
+      <header class="card__header">
+        <img src="images/image-jonathan.jpg" alt="Jonathan Walters" class="card__user-image">
+        <div class="card__user-container">
+          <p class="card__user-name">Jonathan Walters</p>
+          <p class="card__user-education">Verified Graduate</p>
         </div>
       </header>
-      <h2>The team was very supportive and kept me motivated</h2>
-      <p>
+      <h2 class="card__titular">The team was very supportive and kept me motivated</h2>
+      <p class="card__description">
         “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
         for a big company. This was one of the best investments I’ve made in myself. ”
       </p>
     </article>
 
-    <article>
-      <header>
-        <img src="images/image-jeanette.jpg" alt="Jeanette Harmon">
-        <div>
-          <p>Jeanette Harmon</p>
-          <p>Verified Graduate</p>
+    <article class="card">
+      <header class="card__header">
+        <img src="images/image-jeanette.jpg" alt="Jeanette Harmon" class="card__image">
+        <div class="card__user-container">
+          <p class="card__user-name">Jeanette Harmon</p>
+          <p class="card__user-description">Verified Graduate</p>
         </div>
       </header>
-      <h2>An overall wonderful and rewarding experience
+      <h2 class="card__titular">An overall wonderful and rewarding experience
       </h2>
-      <p>
+      <p class="card__description">
         “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
         while doing something I love. ”
       </p>
     </article>
 
-    <article>
-      <header>
-        <img src="images/image-patrick.jpg" alt="Jeanette Harmon">
-        <div>
-          <p>Patrick Abrams</p>
-          <p>Verified Graduate</p>
+    <article class="card">
+      <header class="card__header">
+        <img src="images/image-patrick.jpg" alt="Jeanette Harmon" class="card__image">
+        <div class="card__user-container">
+          <p class="card__user-name">Patrick Abrams</p>
+          <p class="card__user-education">Verified Graduate</p>
         </div>
       </header>
-      <h2>
+      <h2 class="card__titular">
         Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
         learning from their experiences was easy.
       </h2>
-      <p>
+      <p class="card__description">
         “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
         gave me the confidence necessary to be able to go out in the world and present myself as a capable
         junior developer. The standard is above the rest. You will get the personal attention you need from
@@ -95,18 +86,18 @@
       </p>
     </article>
 
-    <article>
-      <header>
-        <img src="images/image-kira.jpg" alt="Kira Whittle">
-        <div>
-          <p>Kira Whittle</p>
-          <p>Verified Graduate</p>
+    <article class="card">
+      <header class="card__header">
+        <img src="images/image-kira.jpg" alt="Kira Whittle" class="card__image">
+        <div class="card__user-container">
+          <p class="card__user-name">Kira Whittle</p>
+          <p class="card__user-education">Verified Graduate</p>
         </div>
       </header>
-      <h2>
+      <h2 class="card__titular">
         Such a life-changing experience. Highly recommended!
       </h2>
-      <p>
+      <p class="card__description">
         “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
         professionals who can help me learn programming step by step. I was encouraged to enroll by a former
         student of theirs who can only say wonderful things about the program. The entire curriculum and staff
