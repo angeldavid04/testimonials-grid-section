@@ -1,0 +1,132 @@
+/* ----- VARIABLES ----- */
+:root {
+  /* COLORS */
+  /* Primary */
+  --purple50: hsl(260, 100%, 95%);
+  --purple300: hsl(264, 82%, 80%);
+  --purple500: hsl(263, 55%, 52%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey100: hsl(214, 17%, 92%);
+  --grey200: hsl(0, 0%, 81%);
+  --grey400: hsl(224, 10%, 45%);
+  --grey500: hsl(217, 19%, 35%);
+  --darkBlue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+  /* TYPOGRAPHY */
+  --fm-body: "Barlow Semi Condensed", sans-serif;
+  --fw-md: 500;
+  --fw-lg: 600;
+}
+
+/* ----- RESET ----- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  font-family: var(--fm-body);
+  font-weight: var(--fw-md);
+}
+
+.cards-grid {
+  display: grid;
+  gap: 2.25rem;
+  padding-inline: 2.25rem;
+  padding-block: 2.25rem;
+}
+
+.card {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  box-shadow: color-mix(in srgb, var(--black) 20%, transparent) 0px 60px
+    40px -7px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.card__header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.card__user-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card--daniel {
+  background-color: var(--purple500);
+  color: var(--white);
+
+  .card__user-image {
+    border: 2px solid var(--purple300);
+  }
+
+  .card__description {
+    color: var(--grey100);
+  }
+}
+
+.card--jeanette {
+  color: var(--grey500);
+}
+
+.card--jonathan {
+  background-color: var(--grey500);
+  color: var(--white);
+}
+
+.card--patrick {
+  background-color: var(--darkBlue);
+  color: var(--grey200);
+
+  .card__user-image {
+    border: 2px solid var(--purple500);
+  }
+}
+
+.card--kira {
+  color: var(--grey500);
+}
+
+.card__user-image {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: auto;
+}
+
+.card__user-name {
+  font-weight: var(--fw-md);
+  font-size: 1rem;
+}
+
+.card__user-education {
+  font-weight: 400;
+}
+
+.card__titular {
+  font-weight: var(--fw-lg);
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.card__description {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: clamp(1rem, 0.5rem + 0.5vw, 1.25rem);
+}
