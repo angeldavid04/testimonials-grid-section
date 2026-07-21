@@ -173,10 +173,10 @@ main {
   font-weight: var(--fw-lg);
 }
 
-@media screen and (min-width: 76rem) {
+@media screen and (min-width: 79rem) {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
-    padding-inline: 8rem;
+    padding-inline: 10rem;
   }
 
   .card--daniel {
