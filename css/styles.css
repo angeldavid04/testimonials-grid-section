@@ -15,6 +15,7 @@
   --black: hsl(0, 0%, 7%);
   /* TYPOGRAPHY */
   --fm-body: "Barlow Semi Condensed", sans-serif;
+  --fw-sm: 400;
   --fw-md: 500;
   --fw-lg: 600;
 }
@@ -33,11 +34,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-family: var(--fm-body);
   font-weight: var(--fw-md);
+  min-height: 100vh;
 }
 
+main {
+  flex: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ----- CARD COMPONENT ----- */
 .cards-grid {
   display: grid;
   gap: 2.25rem;
@@ -48,8 +67,8 @@ body {
 .card {
   padding-block: 2rem;
   padding-inline: 2rem;
-  box-shadow: color-mix(in srgb, var(--black) 20%, transparent) 0px 60px
-    40px -7px;
+  box-shadow: color-mix(in srgb, var(--black) 25%, transparent) 40px 10px 50px
+    12px;
   display: flex;
   flex-direction: column;
   gap: 1.35rem;
@@ -72,14 +91,14 @@ body {
 .card--daniel {
   background-color: var(--purple500);
   color: var(--white);
+}
 
-  .card__user-image {
-    border: 2px solid var(--purple300);
-  }
+.card--daniel .card__user-image {
+  border: 2px solid var(--purple300);
+}
 
-  .card__description {
-    color: var(--grey100);
-  }
+.card--daniel .card__description {
+  color: var(--grey100);
 }
 
 .card--jeanette {
@@ -94,10 +113,10 @@ body {
 .card--patrick {
   background-color: var(--darkBlue);
   color: var(--grey200);
+}
 
-  .card__user-image {
-    border: 2px solid var(--purple500);
-  }
+.card--patrick .card__user-image {
+  border: 2px solid var(--purple500);
 }
 
 .card--kira {
@@ -116,7 +135,7 @@ body {
 }
 
 .card__user-education {
-  font-weight: 400;
+  font-weight: var(--fw-sm);
 }
 
 .card__titular {
@@ -126,7 +145,46 @@ body {
 }
 
 .card__description {
-  font-weight: 500;
+  font-weight: var(--fw-md);
   line-height: 1.5;
-  font-size: clamp(1rem, 0.5rem + 0.5vw, 1.25rem);
+  font-size: clamp(1rem, 0.25rem + 0.5vw, 1.25rem);
+}
+
+.attribution {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  color: var(--black);
+}
+
+.attribution__link {
+  color: var(--purple500);
+  font-weight: var(--fw-lg);
+}
+
+@media screen and (min-width: 76rem) {
+  .cards-grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline: 8rem;
+  }
+
+  .card--daniel {
+    grid-column: 1 / span 2;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 88% top;
+    background-size: 8rem;
+  }
+
+  .card--jeanette {
+    grid-column: 1;
+  }
+
+  .card--patrick {
+    grid-column: 2 / span 2;
+  }
+
+  .card--kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
 }
