@@ -142,7 +142,7 @@ main {
 .card__titular {
   font-weight: var(--fw-lg);
   line-height: 1.4;
-  font-size: clamp(1.5rem, 5vw, 1.75rem);
+  font-size: clamp(1.15rem, 0.5rem + 1.75vw, 1.3rem);
 }
 
 .card__description {
