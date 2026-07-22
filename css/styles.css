@@ -193,6 +193,10 @@ main {
     background-size: 8rem;
   }
 
+  .card--jonathan {
+    grid-column: 3;
+  }
+
   .card--jeanette {
     grid-column: 1;
   }
