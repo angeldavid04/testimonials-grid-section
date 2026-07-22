@@ -62,11 +62,12 @@ main {
   gap: 2.25rem;
   padding-inline: 2.25rem;
   padding-block: 2.25rem;
+  align-content: center;
 }
 
 .card {
   padding-block: 2rem;
-  padding-inline: 2rem;
+  padding-inline: 2.15rem;
   box-shadow: color-mix(in srgb, var(--black) 25%, transparent) 40px 10px 50px
     12px;
   display: flex;
@@ -141,13 +142,12 @@ main {
 .card__titular {
   font-weight: var(--fw-lg);
   line-height: 1.4;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card__description {
   font-weight: var(--fw-md);
   line-height: 1.5;
-  font-size: clamp(1rem, 0.25rem + 0.5vw, 1.25rem);
 }
 
 .card__description > p {
@@ -164,7 +164,7 @@ main {
 
 .attribution {
   padding-inline: 2rem;
-  padding-block: 2rem;
+  padding-block: 0.5rem;
   color: var(--black);
 }
 
@@ -176,8 +176,10 @@ main {
 @media screen and (min-width: 79rem) {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content;
     padding-inline: 10rem;
-    padding-block: 4.25rem;
+    padding-block: 5.25rem;
+    max-width: 102rem;
   }
 
   .card--daniel {
