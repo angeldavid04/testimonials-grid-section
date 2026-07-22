@@ -15,7 +15,6 @@
   --black: hsl(0, 0%, 7%);
   /* TYPOGRAPHY */
   --fm-body: "Barlow Semi Condensed", sans-serif;
-  --fw-sm: 400;
   --fw-md: 500;
   --fw-lg: 600;
 }
