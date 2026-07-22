@@ -176,7 +176,7 @@ main {
 @media screen and (min-width: 79rem) {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     padding-block: 5.25rem;
     max-width: 72rem;
   }
