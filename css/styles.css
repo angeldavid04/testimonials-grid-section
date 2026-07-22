@@ -142,6 +142,7 @@ main {
 .card__titular {
   font-weight: var(--fw-lg);
   line-height: 1.4;
+  font-size: clamp(1.5rem, 5vw, 1.75rem);
 }
 
 .card__description {
@@ -175,10 +176,9 @@ main {
 @media screen and (min-width: 79rem) {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: min-content min-content;
-    padding-inline: 10rem;
+    grid-template-rows: repeat(2, 1fr);
     padding-block: 5.25rem;
-    max-width: 102rem;
+    max-width: 72rem;
   }
 
   .card--daniel {
