@@ -177,12 +177,12 @@ main {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    padding-block: 5.25rem;
-    max-width: 72rem;
   }
 
   .cards-grid {
+    max-width: 75rem;
     padding-inline: 0;
+    padding-block: 5.25rem;
   }
 
   .card--daniel {
