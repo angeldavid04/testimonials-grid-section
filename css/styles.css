@@ -72,7 +72,7 @@ main {
     12px;
   display: flex;
   flex-direction: column;
-  gap: 1.35rem;
+  gap: 1.25rem;
   border-radius: 10px;
   background-color: var(--white);
 }
@@ -141,8 +141,8 @@ main {
 
 .card__titular {
   font-weight: var(--fw-lg);
-  line-height: 1.4;
-  font-size: clamp(1.15rem, 0.5rem + 1.75vw, 1.3rem);
+  line-height: 1.25;
+  font-size: clamp(1.15rem, 0.5rem + 1.75vw, 1.25rem);
 }
 
 .card__description {
@@ -179,6 +179,10 @@ main {
     grid-template-rows: repeat(2, auto);
     padding-block: 5.25rem;
     max-width: 72rem;
+  }
+
+  .cards-grid {
+    padding-inline: 0;
   }
 
   .card--daniel {
