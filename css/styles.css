@@ -177,6 +177,7 @@ main {
   .cards-grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
     padding-inline: 10rem;
+    padding-block: 4.25rem;
   }
 
   .card--daniel {
